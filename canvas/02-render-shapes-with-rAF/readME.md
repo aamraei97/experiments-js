@@ -4,7 +4,7 @@ This report details the resolution of a critical performance issue.
 
 ### 📌 **Issue & Context**
 
-* This snippet resolves the interactibity issue in 01-render-shape.
+* This snippet resolves the interactivity issue in [01-render-shapes](https://github.com/aamraei97/experiments-js/tree/main/canvas/01-render-shapes).
 * The goal in that snippet was to render 10 million react in canvas. By default, operations in canvas are **render-blocking** and occupy the **main-thread**, which results in poor input interactivity and increasing TTI performance metric. 
 
 ### 🛠️ **Solution**
