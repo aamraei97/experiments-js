@@ -73,7 +73,7 @@ class Chart {
         this.ctx.beginPath()
         this.ctx.fillStyle = "#0a9396"
         for (let i = 0; i < data.length; i++) {
-            // X variable is consist previous rects width + gaps betweens them + y axis ticks width
+            // X variable is consist previous rects width + gaps betweens them + y axis ticks width + small gap in the start to seperate
             let calcRectX = (i * (this.#bar_options.width + this.#bar_options.gap)) + this.#bar_options.axis.y.width
 
             // y value should be calculated based on the canvas height to hold the respected ratio
