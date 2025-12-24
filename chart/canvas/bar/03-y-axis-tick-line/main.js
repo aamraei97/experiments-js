@@ -117,7 +117,7 @@ class Chart {
             // y value should be calculated based on the canvas height to hold the respected ratio
             const calcRectY = ratio * chartValues[i]
             this.ctx.fillStyle = this.#chart_data[i].backgroundColor
-            this.ctx.roundRect(calcRectX, BAR_CHART_BOTTOM_SPACE, this.#bar_options.width, calcRectY, [0, 0, 10, 10])
+            this.ctx.roundRect(calcRectX, BAR_CHART_BOTTOM_SPACE, this.#bar_options.width, calcRectY, [0, 0, 16, 16])
             this.ctx.fill()
         }
 
